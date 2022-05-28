@@ -1,0 +1,59 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+
+    .intro {
+      text-align: center;
+      color: rgb(228, 228, 228);
+      margin-bottom: 18px;
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        color: #ccc;
+        line-height: 1.7;
+      }
+    }
+
+    .control {
+      width: 100%;
+
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 12px 24px;
+        background-color: rgba($color: white, $alpha: 0.2);
+      }
+    }
+
+    .btn {
+      border: none;
+      padding: 12px 24px;
+      width: 100%;
+      margin-top: 18px;
+      background-color: var(--clr-blue-light);
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.4s ease-out;
+
+      &:hover {
+        filter: brightness(1.1);
+      }
+    }
+  }
+}
